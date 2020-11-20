@@ -8,8 +8,9 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg_main"
@@ -18,7 +19,7 @@
         tools:layout_editor_absoluteY="16dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/regvol"
         android:layout_width="276dp"
         android:layout_height="57dp"
         android:layout_marginStart="79dp"
@@ -27,21 +28,23 @@
         android:layout_marginRight="79dp"
         android:layout_marginBottom="102dp"
         android:fontFamily="@font/montserrat"
+        android:onClick="regvol"
         android:text="Стать волонтёром"
         android:textAllCaps="false"
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="normal"
-        app:backgroundTint="#19DA7E"
+        app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/mainText"
         app:layout_constraintVertical_bias="0.349" />
 
     <Button
-        android:id="@+id/button2"
+        android:onClick="regorg"
+        android:id="@+id/regorg"
         android:layout_width="276dp"
         android:layout_height="57dp"
         android:layout_marginStart="79dp"
@@ -57,27 +60,32 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/regvol"
         app:layout_constraintVertical_bias="0.126" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/mainText"
         android:layout_width="358dp"
         android:layout_height="264dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
         android:fontFamily="@font/montserrat"
-        android:text="Добро пожаловать в мир волонтёрства"
+        android:maxLines="4"
+        android:text="Добро\nпожаловать\nв мир\nволонтёрства"
         android:textColor="#FFFFFF"
-        android:textSize="52sp"
+        android:textSize="46sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.402" />
 
     <TextView
-        android:id="@+id/login"
+        android:id="@+id/login1"
         android:layout_width="124dp"
         android:layout_height="32dp"
         android:fontFamily="@font/montserrat"
@@ -90,7 +98,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/regorg"
         app:layout_constraintVertical_bias="0.101" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
