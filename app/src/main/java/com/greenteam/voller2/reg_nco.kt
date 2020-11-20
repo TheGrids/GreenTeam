@@ -1,14 +1,14 @@
 package com.greenteam.voller2
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 
-class LoginActivity : AppCompatActivity() {
+class reg_nco : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_reg_nco)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
         supportActionBar!!.title = ""
@@ -16,10 +16,6 @@ class LoginActivity : AppCompatActivity() {
         supportActionBar!!.setDisplayShowHomeEnabled(true);
         toolbar.setNavigationOnClickListener { onBackPressed() }
         val textView: TextView = findViewById(R.id.toolbar_title)
-        textView.text = "Войти в аккаунт"
-
+        textView.text = ""
     }
-
-
-
 }

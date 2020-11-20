@@ -2,6 +2,7 @@ package com.greenteam.voller2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
 
 class reg_vol : AppCompatActivity() {
@@ -14,5 +15,7 @@ class reg_vol : AppCompatActivity() {
         supportActionBar!!.setDisplayHomeAsUpEnabled(true);
         supportActionBar!!.setDisplayShowHomeEnabled(true);
         toolbar.setNavigationOnClickListener { onBackPressed() }
+        val textView: TextView = findViewById(R.id.toolbar_title)
+        textView.text = "Регистрация"
     }
 }
