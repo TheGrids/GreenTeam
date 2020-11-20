@@ -1,7 +1,10 @@
 <resources>
-    <string name="app_name">VOLLER 2</string>
+    <string name="app_name">Мир Волонтёров</string>
     <string name="event_title_description">Описание</string>
     <string name="event_title_time">Время проведения</string>
     <string name="event_title_organizer">Организатор</string>
     <string name="event_title_applyButton">Подать заявку</string>
+    <string name="political">
+        Нажимая кнопку, вы даете <u>согласие на обработку персональных данных</u> и подтверждаете, что ознакомились с <u>политикой конфидециальности</u>.
+    </string>
 </resources>
