@@ -169,6 +169,7 @@
                         android:id="@+id/organizerText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:text="ВОД «Волонтеры-медики»\nРостовская область" />
                         android:text="ВОД «Волонтеры-медики»\nРостовская область"
                         />
                 </LinearLayout>
@@ -196,6 +197,5 @@
                 android:text="TODO" />
         </LinearLayout>
     </LinearLayout>
-    
 
 </androidx.constraintlayout.widget.ConstraintLayout>

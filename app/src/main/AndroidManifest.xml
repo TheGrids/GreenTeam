@@ -33,6 +33,7 @@
         <activity android:name=".reg_org" />
         <activity android:name=".reg_vol" />
         <activity android:name=".LoginActivity" />
+        <activity android:name=".MapsActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,12 +43,13 @@
         </activity>
 
         <meta-data
-<<<<<<< Updated upstream
-=======
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBfL3jqQEEe19Pi4YMsNUgsroK1jje68Hw" />
+        <meta-data
+
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <meta-data
->>>>>>> Stashed changes
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
