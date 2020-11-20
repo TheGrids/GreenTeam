@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun regvol(view: View){
-        val intent = Intent(this@MainActivity, reg_vol::class.java)
+        val intent = Intent(this@MainActivity, MapsActivity::class.java)
         startActivity(intent)
     }
 
